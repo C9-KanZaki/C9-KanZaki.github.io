@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta keywords="exercise in class">
+    <title></title>
+<style>
+    span {
+        background-color:aquamarine;
+    }    
+    #btn {
+        width:100px
+        
+        
+    }    
+</style>
+
+</head>
+
+<body>
+   <input id='username' type="type">
+   <input type="text" placeholder='enter your username'>
+   <br>
+   <input type="color">
+   <input type="file">
+   <input type="image" id='btn' src='https://www.saveur.com/sites/saveur.com/files/styles/1000_1x_/public/custom-touts/2015/09/4hr_baguette_2000x1500.jpg?itok=4eIxTOxC&fc=50,50'>
+   <br>
+   <button>
+       <img src ='https://www.saveur.com/sites/saveur.com/files/styles/1000_1x_/public/custom-touts/2015/09/4hr_baguette_2000x1500.jpg?itok=4eIxTOxC&fc=50,50'>
+       
+   </button>
+    
+    <input list='fun'>
+    <datalist id='fun'>
+        <option value="soccer">soccer</option>
+        <option value="tennis">tennis</option>
+        <option value="running">running</option>
+    </datalist>
+    <br>
+    <meter min="0" max="10" value="5"></meter>
+    <br>
+    <progess min="0" max="10" value="5"></progess>
+    <input name='people' id='numofpeople' type="range" min='1' max='10' value=5><span id=people></span>
+    <input type="hidden" value="secertcode">
+    <br>
+    <br>
+    <p>
+        <script>
+            input = document.querySelector('#numofpeople');
+            span = document.querySelector('span');
+            val = input.value;
+            span.innerHTML = val;
+
+            input.oninput = function() {
+
+                val = input.value;
+
+                span.innerHTML = val;
+            };
+        </script>
+    </p>
+</body></html>
